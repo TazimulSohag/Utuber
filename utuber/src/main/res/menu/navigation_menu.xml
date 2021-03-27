@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/manual_id"
+        android:icon="@drawable/manual"
+        android:title="User Manual"/>
+
+    <item android:id="@+id/aboutus_id"
+        android:icon="@drawable/about_us"
+        android:title="About App"/>
+
+    <item android:id="@+id/feedback_id"
+        android:icon="@drawable/feedback"
+        android:title="Feedback"/>
+
+    <item android:id="@+id/share_id"
+        android:icon="@drawable/share"
+        android:title="Share"/>
+
+</menu>

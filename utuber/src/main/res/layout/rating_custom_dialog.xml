@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/rounded_border_white"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="20dp"
+    android:paddingVertical="20dp"
+    android:layout_marginHorizontal="15dp"
+    android:layout_gravity="center">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="Experience with us"
+        android:textAlignment="center"
+        android:textSize="23sp"
+        android:textColor="@color/youtube_red"
+        android:textStyle="bold"
+        android:layout_marginBottom="20dp"/>
+
+    <RatingBar
+        android:id="@+id/rating_bar_id"
+        android:background="@color/white"
+        style="@style/Widget.AppCompat.RatingBar"
+        android:stepSize=".5"
+        android:layout_gravity="center"
+        android:rating="4.5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/rate_btn_id"
+            android:layout_width="0dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/less_rounded_red"
+            android:textColor="@color/white"
+            android:text="Rate"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="5dp"/>
+
+        <Button
+            android:id="@+id/later_btn_id"
+            android:layout_width="0dp"
+            android:textSize="22sp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/less_rounded_red"
+            android:textColor="@color/white"
+            android:text="Later"
+            android:textAllCaps="false"
+            android:layout_marginHorizontal="5dp"/>
+
+    </LinearLayout>
+
+</LinearLayout>

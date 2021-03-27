@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.banglabs.utuber.Description">
+
+
+
+
+    <LinearLayout
+        android:id="@+id/search_section"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_toLeftOf="@+id/user_search_btn_id"
+            android:layout_weight="4.8"
+            android:padding="5dp">
+
+
+            <EditText
+                android:visibility="visible"
+                android:layout_marginVertical="1dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/user_des_search_box_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_white"
+                android:focusable="false"
+                android:drawableRight="@drawable/ic_close_black_24dp"
+                android:hint="Search on Youtube"
+                android:paddingRight="8dp"
+                android:textSize="18sp"
+
+
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:id="@+id/des_url_pest_btn_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="2dp"
+            android:layout_marginVertical="4dp"
+            android:layout_weight=".6"
+            android:background="@drawable/rounded_white"
+            android:src="@drawable/pest_logo"
+
+
+            />
+
+        <ImageButton
+            android:layout_marginHorizontal="2dp"
+            android:id="@+id/des_search_btn_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="4dp"
+            android:layout_weight=".6"
+            android:tint="@color/youtube_red"
+            android:background="@drawable/rounded_white"
+            android:src="@drawable/search_logo" />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginVertical="20dp"
+        android:id="@+id/description_msg"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/youtube_red"
+        android:layout_below="@id/search_section">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textColor="@color/white"
+            android:text="Description"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="20sp"
+            android:gravity="center"/>
+        <ImageView
+            android:layout_marginRight="20dp"
+            android:layout_width="45dp"
+            android:padding="10dp"
+            android:rotation="180"
+            android:layout_height="match_parent"
+            android:src="@drawable/description"
+            android:tint="@color/white"
+            android:layout_alignParentRight="true"/>
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/des_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/des_copy_btn_id"
+        android:layout_below="@+id/description_msg">
+
+        <EditText
+            android:id="@+id/video_description_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="17dp"
+            android:focusable="false"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="7dp"
+            />
+
+    </ScrollView>
+    <Button
+        android:id="@+id/des_copy_btn_id"
+        android:paddingHorizontal="10dp"
+        android:paddingVertical="8dp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_above="@+id/bottom_navigation"
+        android:layout_centerHorizontal="true"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rounded_border_white"
+        android:text="copy all"
+        android:textStyle="bold"
+        android:textColor="@color/youtube_red"
+        android:textSize="22sp"
+        />
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/navigation_item"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@drawable/backgrand_nav_item"
+        app:itemIconTint="@drawable/navigation_item_selector"
+        app:itemTextColor="@drawable/navigation_item_selector"
+        />
+
+</RelativeLayout>

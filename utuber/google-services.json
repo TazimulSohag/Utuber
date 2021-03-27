@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1072309034463",
+    "firebase_url": "https://banglabsutuber.firebaseio.com",
+    "project_id": "banglabsutuber",
+    "storage_bucket": "banglabsutuber.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1072309034463:android:f3aa98e45aa4c2deb0b86a",
+        "android_client_info": {
+          "package_name": "co.banglabs.utuber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1072309034463-ebp47g6sf3pet8q3d33rr7ofberg5tvt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJOCqtqgZQF7vmkVucWtJQjPA743RJhkM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1072309034463-ebp47g6sf3pet8q3d33rr7ofberg5tvt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

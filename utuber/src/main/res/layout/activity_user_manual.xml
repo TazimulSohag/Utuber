@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.banglabs.utuber.UserManual">
+
+    <com.shuhart.stepview.StepView
+        android:layout_marginTop="1dp"
+        android:background="@drawable/buttonshape"
+        app:sv_nextStepCircleEnabled="true"
+        app:sv_nextStepCircleColor="#8D8A8A"
+        android:id="@+id/step_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        app:sv_selectedCircleColor="#fff"
+        app:sv_selectedTextColor="#FF0000"
+        app:sv_stepLineWidth="1dp"
+        app:sv_stepsNumber="6"
+        app:sv_stepPadding="8dp"
+        app:sv_nextTextColor="#000"
+        app:sv_nextStepLineColor="#fff"
+        app:sv_doneCircleColor="#fff"
+        app:sv_doneStepLineColor="#fff"
+        app:sv_doneCircleRadius="16dp"
+        app:sv_selectedCircleRadius="16dp"
+        app:sv_selectedStepNumberColor="@color/colorPrimary"
+        app:sv_stepViewStyle="@style/StepView"
+        app:sv_doneStepMarkColor="#009688"
+        app:sv_stepNumberTextSize="12sp"
+        app:sv_animationType="All"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:padding="10dp"
+        android:layout_marginVertical="1dp"
+        android:id="@+id/image_id"
+        android:src="@drawable/one"
+        android:scaleType="fitCenter"
+        android:layout_below="@id/step_view"
+        android:layout_above="@+id/btn_section"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <LinearLayout
+        android:id="@+id/btn_section"
+        android:weightSum="3"
+        android:orientation="horizontal"
+        android:paddingVertical="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="45dp">
+
+        <ImageView
+            android:backgroundTint="@color/white"
+            android:id="@+id/previous_id"
+            android:rotation="-90"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/arrow"/>
+
+        <ImageView
+            android:tint="@color/youtube_red"
+            android:id="@+id/home_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/home" />
+
+
+        <ImageView
+            android:backgroundTint="@color/white"
+            android:id="@+id/next_id"
+            android:rotation="90"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/arrow" />
+
+
+    </LinearLayout>
+
+</RelativeLayout>

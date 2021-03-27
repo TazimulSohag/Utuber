@@ -1,0 +1,31 @@
+<resources>
+    <string name="action_settings">Settings</string>
+    <string name="app_name">Tube Optimizer</string>
+    <string name="Open">open</string>
+    <string name="Close">close</string>
+    <string name="Muliline_text">
+        Powered by Banglabs\n©2020
+    </string>
+
+
+    <string-array name="quality_type">
+        <item>"High Quality"</item>
+        <item>"Normal Quality"</item>
+        <item>"Low Quality"</item>
+
+    </string-array>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+    <string name="menu_tools">Tools</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_send">Send</string>
+    <string name="splash_text">Best Video Optimize tool</string>
+</resources>

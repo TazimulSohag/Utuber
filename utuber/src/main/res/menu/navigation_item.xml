@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/tag_item"
+        android:icon="@drawable/tag"
+        android:title="Tag"
+        android:checked="true"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/title_item"
+        android:icon="@drawable/thumbnail"
+        android:checked="true"
+        android:title="Thumbnail"
+        app:showAsAction="withText"/>
+    <item
+        android:id="@+id/description_item"
+        android:icon="@drawable/description"
+        android:checked="true"
+        android:title="Description"
+        app:showAsAction="withText"/>
+
+
+</menu>

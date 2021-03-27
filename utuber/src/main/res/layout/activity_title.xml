@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.banglabs.utuber.Title">
+
+
+    <LinearLayout
+        android:id="@+id/search_section"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginHorizontal="5dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="6">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_horizontal"
+            android:layout_toLeftOf="@+id/user_search_btn_id"
+            android:layout_weight="4.8"
+            android:padding="5dp">
+
+
+            <EditText
+                android:visibility="visible"
+                android:layout_marginVertical="1dp"
+                android:paddingLeft="10dp"
+                android:id="@+id/user_title_search_box_id"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/rounded_white"
+                android:focusable="false"
+                android:drawableRight="@drawable/ic_close_black_24dp"
+                android:hint="Search on Youtube"
+                android:paddingRight="8dp"
+                android:textSize="18sp"
+
+
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:singleLine="true"
+                android:scrollHorizontally="true"
+                android:maxLines="1"
+                android:ellipsize="end"
+
+
+                />
+
+
+
+        </RelativeLayout>
+
+
+        <ImageButton
+            android:layout_marginHorizontal="2dp"
+            android:id="@+id/title_url_pest_btn_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight=".6"
+            android:layout_marginVertical="4dp"
+            android:background="@drawable/rounded_white"
+            android:src="@drawable/pest_logo" />
+
+        <ImageButton
+            android:layout_marginHorizontal="2dp"
+            android:id="@+id/title_search_btn_id"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginVertical="4dp"
+            android:layout_weight=".6"
+            android:tint="@color/youtube_red"
+            android:background="@drawable/rounded_white"
+            android:src="@drawable/search_logo" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_marginVertical="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/search_section"
+        android:layout_above="@+id/bottom_navigation">
+
+        <RelativeLayout
+            android:gravity="center"
+            android:layout_below="@id/search_section"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_marginTop="10dp"
+                android:id="@+id/title_view_id"
+                android:layout_marginHorizontal="5dp"
+                android:layout_centerHorizontal="true"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:textColor="@color/youtube_red"
+                android:text="Title" />
+            <Button
+                android:layout_below="@id/title_view_id"
+                android:id="@+id/title_copy_id"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="3dp"
+                android:layout_marginVertical="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rounded_border_white"
+                android:text="copy"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/copy_logo"
+                android:textColor="@color/youtube_red"
+                android:textSize="18sp"
+                />
+
+
+            <ImageView
+                android:id="@+id/video_image_view_id"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/banglabs"
+                android:layout_below="@+id/title_copy_id"
+                android:layout_marginHorizontal="25dp"
+                android:layout_marginVertical="15dp"
+                android:background="@drawable/rounded_border_white"
+                android:backgroundTintMode="screen"
+
+                />
+
+            <LinearLayout
+                android:paddingVertical="7dp"
+                android:id="@+id/download_section"
+                android:layout_below="@id/video_image_view_id"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:background="#EBE9E9">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/rounded_border_white">
+
+                    <Spinner
+                        android:id="@+id/download_option_id"
+                        android:layout_width="150dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginRight="5dp"/>
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/image_download_btn_id"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="5dp"
+                    android:background="@drawable/rounded_red_background"
+                    android:paddingHorizontal="14dp"
+                    android:text="Download"
+                    android:textColor="@color/white"
+                    android:textSize="17sp" />
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        app:menu="@menu/navigation_item"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:itemBackground="@drawable/backgrand_nav_item"
+        app:itemIconTint="@drawable/navigation_item_selector"
+        app:itemTextColor="@drawable/navigation_item_selector"
+        />
+
+</RelativeLayout>

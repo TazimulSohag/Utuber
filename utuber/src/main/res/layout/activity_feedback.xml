@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="co.banglabs.utuber.FeedbackActivity">
+
+    <EditText
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="25dp"
+        android:id="@+id/feedback_email_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:hint="Enter your Email"
+        android:background="@drawable/rounded_border_white"/>
+
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_marginHorizontal="10dp"
+        android:background="@drawable/rounded_border_white"
+        android:layout_below="@+id/feedback_email_id"
+        android:layout_width="match_parent"
+        android:layout_height="250dp">
+
+        <EditText
+            android:id="@+id/user_revew_box_id"
+            android:hint="This app is ..."
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="22sp"/>
+
+
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="35dp"
+        android:weightSum="2"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/clear_btn_id"
+            style="@style/Widget.AppCompat.Light.ActionButton"
+            android:background="@drawable/rounded_red_background"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Clear"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/send_btn_id"
+            style="@style/Widget.AppCompat.Light.ActionButton"
+            android:background="@drawable/rounded_red_background"
+            android:layout_marginHorizontal="10dp"
+            android:textColor="@color/white"
+            android:textSize="22sp"
+            android:text="Send"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
